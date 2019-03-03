@@ -1,0 +1,8 @@
+<h1>Add new guest</h1>
+<p>
+  Add a new member to the sign in system database
+</p>
+<input type="text" placeholder="John Smith" [(ngModel)]="memberName" />
+<br />
+<button type="button" class="btn btn-primary" style="margin: 10px;" (click)="createMember()">Create</button>
+<button type="button" class="btn btn" style="margin: 10px" routerLink="/members">Cancel</button>

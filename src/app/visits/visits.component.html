@@ -1,0 +1,70 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Visits Management</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h2>Filter Options</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <label>Start Date</label>
+  </div>
+  <div class="col-md-3">
+    <input type="checkbox" [(ngModel)]="startDateEnabled">
+  </div>
+  <div class="col-md-3">
+    <input matInput [matDatepicker]="startDateMat" [disabled]="!startDateEnabled" [(ngModel)]="startDate">
+    <mat-datepicker-toggle [for]="startDateMat"></mat-datepicker-toggle>
+    <mat-datepicker #startDateMat></mat-datepicker>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-3">
+    <label>End Date</label>
+  </div>
+  <div class="col-md-3">
+    <input type="checkbox" [(ngModel)]="endDateEnabled">
+  </div>
+  <div class="col-md-3">
+    <input matInput [matDatepicker]="endDateMat" [disabled]="!endDateEnabled" [(ngModel)]="endDate">
+    <mat-datepicker-toggle [for]="endDateMat"></mat-datepicker-toggle>
+    <mat-datepicker #endDateMat></mat-datepicker>
+  </div>
+</div>
+
+<button class="btn btn-primary" (click)="search()">Search</button>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-primary float-right">Add New Visit</button>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Member</th>
+        <th>Arrival</th>
+        <th>Departure</th>
+        <th>Edit</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let visit of visits">
+        <td>Still need to figure this part out</td>
+        <td>{{ visit.arrivalTime }}</td>
+        <td>{{ visit.departureTime }}</td>
+        <td>
+          <button class="btn btn-primary">Edit</button>
+          <button class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

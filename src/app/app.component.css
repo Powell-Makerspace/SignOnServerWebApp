@@ -1,0 +1,20 @@
+/*nav-item, active {*/
+  /*background-color: gray !important;*/
+/*}*/
+
+.header-row {
+  background-color: #006699;
+  color: white
+}
+
+.header-row > .btn {
+  color: white !important;
+}
+
+.navbar-row, nav {
+  background-color: rgba(0,102,153,0.56) !important;
+}
+
+nav ul li a {
+  color: white !important;
+}
