@@ -15,8 +15,11 @@ export class ListGuestsComponent implements OnInit {
   constructor(private memberService: MemberControllerService) { }
 
   ngOnInit() {
+    console.log('sending Get Request');
     this.memberService.getMembersUsingGET({ membershipType: null, memberName: null}).subscribe(
       members => {
+
+        console.log('getting Data');
         this.members = members.slice(0, 10);
         console.log(members);
       }

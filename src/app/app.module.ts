@@ -9,7 +9,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {AddGuestComponent} from './guests/add-guest/add-guest.component';
 import {ListGuestsComponent} from './guests/list-guests/list-guests.component';
-import {MatDatepickerModule, MatNativeDateModule, MatSidenavModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatSidenavModule,
+  MatTableModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -28,7 +35,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatButtonModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]
