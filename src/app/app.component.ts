@@ -7,14 +7,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  showSideBar = true;
+  showNavMenu = true;
 
 
   public ngOnInit() {
-    setInterval(this.toggleSidebar(), 1000);
-  }
 
-  toggleSidebar() {
-    this.showSideBar = !this.showSideBar;
   }
 }

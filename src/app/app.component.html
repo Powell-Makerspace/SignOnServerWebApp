@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-direction: column; height: 100vh">
   <header class="navbar navbar-expand-lg">
-    <img src="assets/images/MakerspaceLogo.png" style="width: 100px; margin-right: 15px">
+    <img src="assets/images/MakerspaceLogo.png" style="width: 100px; margin-right: 15px" (click)="showNavMenu = !showNavMenu">
     <h1>Sign On Administration Portal</h1>
 
     <button class="btn ml-auto" type="submit">
@@ -13,7 +13,7 @@
 
   <mat-sidenav-container style="height: 100%">
 
-    <mat-sidenav mode="side" [opened]="true">
+    <mat-sidenav mode="side" [opened]="showNavMenu">
       <nav class="navbar navbar-expand-lg navbar-light bg-light align-top">
         <ul class="nav flex-column navbar-ac">
           <li class="nav-item active">
