@@ -18,6 +18,7 @@ import {
   MatTableModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     DashboardComponent,
     ListGuestsComponent,
     VisitsComponent,
-    AddGuestComponent
+    AddGuestComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

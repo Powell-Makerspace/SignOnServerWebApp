@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitsComponent } from './visits/visits.component';
 import {ListGuestsComponent} from './guests/list-guests/list-guests.component';
 import {AddGuestComponent} from './guests/add-guest/add-guest.component';
+import {NotFoundComponent} from './not-found/not-found.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'members', component: ListGuestsComponent },
   { path: 'members/create', component: AddGuestComponent },
-  { path: 'visits', component: VisitsComponent }
+  { path: 'visits', component: VisitsComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
