@@ -1,0 +1,7 @@
+
+# node dependencies and build files
+node_modules
+dist
+
+# Intellij files
+.idea

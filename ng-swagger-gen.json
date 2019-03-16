@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/ng-swagger-gen/ng-swagger-gen-schema.json",
-  "swagger": "http://localhost:8080/v2/api-docs",
+  "swagger": "http://192.168.1.5:8080/v2/api-docs",
   "output": "src/app/api",
   "prefix": "Api",
   "ignoreUnusedModels": true,
