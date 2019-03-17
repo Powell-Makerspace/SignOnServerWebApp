@@ -1,5 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-.btn {
-  margin: 5px;
+
+.mat-stroked-button {
+  margin: 5px !important;
+  border: 2px solid currentColor !important;
+
+  -webkit-transition: .25s !important; /* Safari, Chrome and Opera > 12.1 */
+  -moz-transition: .25s !important; /* Firefox < 16 */
+  -ms-transition: .25s !important; /* Internet Explorer */
+  -o-transition: .25s !important; /* Opera < 12.1 */
+  transition: .25s !important;
+}
+
+.mat-stroked-button:hover {
+  color: white !important;
+  background-color: #e7e514 !important;
+  border: 2px solid #e7e514 !important;
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16)!important;
 }
